@@ -1,3 +1,10 @@
+
+
+#currpage {
+    background-color:#096250;
+}
+
+
 #google {
        
         font-family: 'Cabin', sans-serif;
@@ -55,7 +62,7 @@ div.more-selectors p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    padding-right: 
+    padding-right: 5%
     
     
   }
@@ -119,6 +126,35 @@ div.more-selectors p {
 
 .fit-half{
     width: 49%
+}
+
+#index{
+    background: #096250
+}
+
+.less-space{
+    padding: 0px;
+    margin: -5%;
+}
+
+.no-pad{
+    padding:0;
+    margin: 0%;
+
+}
+
+
+.text-white{
+    color: white;
+}
+
+.text-white-bold{
+    color: white;
+    font-weight: bold;
+}
+
+a.text-white:hover{
+    color: #212529;
 }
 
 /* 
@@ -197,17 +233,12 @@ div.more-selectors p {
         grid-gap: 50px;
         padding-top: 10vh;
         }
-        /* h1:after{
-            content:"in landscape" */
-
-        /* } */
-    
-
+ 
     .grid-container.about-lauren{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-        padding-right:   
+        padding-right: 5%  
         }
 
     .grid-container.resize{
@@ -238,13 +269,13 @@ div.more-selectors p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    padding-right:   
+    padding-right: 5%;   
     }
     
 
     .grid-container.resize{
         display: grid;
-        grid-template-columns: 2fr 1.5fr;
+        grid-template-columns: 2fr 1.3fr;
         grid-gap: 50px;
         padding-top: 10vh;
         padding-right: 5%;  
@@ -265,3 +296,49 @@ div.more-selectors p {
 
   
 }
+
+
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:9999999;
+}
+
+iframe.background{ 
+    background-color: white
+}
+
+.toggler { position: relative; }
+#effect { width: 340px; padding: 0.4em; position: relative; background: #fff; }
+
+
+
+
+
+@media (inverted-colors: inverted) {
+    a, h1, h2, p {
+      background: black;
+      color: yellow;
+    }
+  }

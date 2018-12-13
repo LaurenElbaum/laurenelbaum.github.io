@@ -28,12 +28,18 @@
         <!-- Custom styles for this template -->
         <link href="css/freelancer.min.css" rel="stylesheet">
 
+        <!-- For silliness -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
         <!-- This is my style sheet -->
         <link href="css/lauren-style.css" rel="stylesheet">
         
     </head>
-            
+          
             <body id="page-top">
+              <header>
+                    <!-- Skip to Content -->
+                    <a class="skip-main" href="#main">Skip to main content</a>
 
                     <!-- Navigation -->
                     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -53,15 +59,16 @@
                                   </li>
             
                             <li class="nav-item mx-0 mx-lg-1">
-                              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="5-things-about-lauren.html">About Lauren</a>
+                              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="5-things-about-lauren.html" id="currpage">About Lauren</a>
                             </li>
                             
                           </ul>
                         </div>
                       </div>
                     </nav>
+                  </header>
     
-    <div role="main">
+    <div role="main" id="main" tabindex="-1">
     <div class="container">    
     <!-- <h1 class="text-uppercase mb-0">5 THINGS ABOUT LAUREN</h1> -->
     </div>
@@ -79,7 +86,9 @@
                     <div class="lauren-picture"> <img width="400" class="img-fluid mb-5 d-block mx-auto" src="img/laurenelbaumv2-539-teach.jpg" alt="and image of Lauren"></div>
                     
                     <div class="grid-item padding">
-                        <p>1. I'm a silly human.</p>
+                        <div class="toggler">
+                            <div id="bigger" class="ui-widget-content ui-corner-all">
+                        <p id = "move">1. I'm a playful person.</p> </div> </div>
                         <p>2. I’m highly curious.</p>
                         <p>3. I have a low tolerance for cognitive dissonance.</p>
                         <p>4. I value relationships.</p>
@@ -98,64 +107,14 @@
            
         </div>
 
-        
-    <!-- </section>
-
-    <section class = "prove">
-            <div class="container prove">
-                <h3>Heading</h3>
-                <p>Hello</p>
-            </div>
-            <div class="container for-class">
-                <p>I wanted to prove</p> 
-                <p class = "hello">that I knew how to do this</p> 
-                <p class = "goodbye">even though I like the styles </p>
-                <p class = "why">from the theme.</p>
-
-
-
-
-
-            </div>
-
-
-    </section> -->
-
-    <!-- <section>
-            <div class= "container more-selectors">
-                <h3>Heading</h3>
-                <ul>
-                    <li>
-                        This
-                    </li>
-                    
-                    <li>
-                        is
-                    </li>
-                    
-                    <li>
-                        an
-                    </li>  
-                                        
-                    <li class= "adjust">
-                        unordered
-                    </li>                  
-                    <li>
-                        list.
-                    </li>
-
-                </ul>
-
-                <p>This is not.</p>
-
-
-            </div>
-
-
-    </section> -->
     </div>
 
-
+    <!-- Footer -->
+    <footer class = "container">
+        <p class= "no-pad">Lauren Elbaum's Page</p>
+        <p class= "no-pad">Contact: <a href="mailto:laurenelbaum@gmail.com">laurenelbaum@gmail.com</a></p>
+    </footer>
+    
 
      <!-- Bootstrap core JavaScript -->
      <script src="vendor/jquery/jquery.min.js"></script>
@@ -171,5 +130,32 @@
  
      <!-- Custom scripts for this template -->
      <script src="js/freelancer.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+     <script>
+        $( function() {
+          var state = true;
+          $( "#move" ).hover( function() {
+            if ( state ) {
+              $( "#bigger" ).animate({
+                backgroundColor: "#2c3e50",
+                color: "#fff",
+                width: 500
+              }, 1000 );
+            } else {
+              $( "#bigger" ).animate({
+                backgroundColor: "#fff",
+                color: "#000",
+                width: 340
+              }, 1000 );
+            }
+            state = !state;
+          });
+        } );
+        </script>
+     
+     
 </body>
 </html>

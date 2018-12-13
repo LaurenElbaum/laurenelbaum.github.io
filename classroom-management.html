@@ -33,6 +33,9 @@
     </head>
             
             <body id="page-top">
+                <header>
+                <!-- Skip to Content -->
+                <a class="skip-main" href="#main">Skip to main content</a>
 
                     <!-- Navigation -->
                     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -45,7 +48,7 @@
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                           <ul class="navbar-nav ml-auto">
                             <li class="nav-item mx-0 mx-lg-1">
-                              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="classroom-management.html">classroom management</a>
+                              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="classroom-management.html" id="currpage">classroom management</a>
                             </li>
             
                             <li class="nav-item mx-0 mx-lg-1">
@@ -61,25 +64,18 @@
                         </div>
                       </div>
                     </nav>
+                </header>
 
-    <div role="main" id= "main">
+    <div role="main" id= "main" id="main" tabindex="-1">
     <div class="container">    
-    <!-- <h1 class="text-uppercase mb-0">5 TIPS FOR CLASSROOM MANAGEMENT</h1> -->
     </div>
 
     <section class="tips" id="tips">
         <div class="container">
-            <h1 class="text-center text-uppercase text-secondary mb-0">5 Tips for Classroom Management</h1>
-          
-            <!-- Should I use padding instead? If so, how? -->
-            <!-- Later, connect all the broken links now that I know how to get them on github, less than 100
-            Also, fix all the other h1's -->
-            
+            <h1 class="text-center text-uppercase text-secondary mb-0">5 Tips for Classroom Management</h1>            
             <div class="grid-container management-tips">
-                   
 
-
-                    <div class="grid-item padding extra"><h2>1. Rules mean nothing without a relationship</h2>
+                <div class="grid-item padding extra"><h2>1. Rules mean nothing without a relationship</h2>
                         <p>Relationships matter. Start building relationships with your students. Ask people how they are today, ask them how they are doing with their assignments, if you give them advice on solving a problem, check in with them to see how it’s going. Eventually people will start talking about their lives then it’s up to you where you’re going to set boundaries between life and work.</p></div>
 
                     <div class="grid-item"><img class="img-fluid mb-5 d-block mx-auto" src="img/community-scrabble.jpg" alt="A picture of scrabble letters that spell community"></div>
@@ -141,31 +137,17 @@
 
 
         </div>
-        
-        <!-- <div class="container">    
-            <p id="google">This is an extra google font called "Cabin". Just to show I can do it. The other google fonts came with the template.</p>
-
-            <div class="more-selectors">
-                    <p>I</p>
-                    <p id = "need">need</p>
-                    <p>15</p>
-                    <p>selectors</p>
-        
-            </div> -->
-            
-
-        <!-- </div> -->
-
-
-       
-
    
         
     </section>
 </div>
 
 
-
+    <!-- Footer -->
+    <footer class = "container">
+        <p class= "no-pad">Lauren Elbaum's Page</p>
+        <p class= "no-pad">Contact: <a href="mailto:laurenelbaum@gmail.com">laurenelbaum@gmail.com</a></p>
+    </footer>
 
      <!-- Bootstrap core JavaScript -->
      <script src="vendor/jquery/jquery.min.js"></script>
@@ -181,5 +163,8 @@
  
      <!-- Custom scripts for this template -->
      <script src="js/freelancer.min.js"></script>
+
+
+     
 </body>
 </html>

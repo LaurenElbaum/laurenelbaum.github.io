@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
     
-        <title>Lauren Elbaum - Start Bootstrap Theme</title>
+        <title>Lauren Elbaum - Things I Learned While Teaching</title>
         <!-- Default style sheet -->
         <link href="css/default-style-sheet.css" rel="stylesheet">
         <!-- Bootstrap core CSS -->
@@ -27,11 +27,19 @@
 
         <!-- This is my style sheet -->
         <link href="css/lauren-style.css" rel="stylesheet">
+
+        <!-- For Lightbox -->
+        <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+        <link rel="stylesheet" href="dist/css/lightbox.min.css">
         
     </head>
-            
+          
             <body id="page-top">
-
+              <header>
+              
+              <!-- Skip to Content -->
+              <a class="skip-main" href="#main">Skip to main content</a>
+              
                     <!-- Navigation -->
                     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
                       <div class="container">
@@ -47,7 +55,7 @@
                             </li>
                            
                             <li class="nav-item mx-0 mx-lg-1">
-                                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="5-things-i-learned-from-teaching.html">Learning</a>
+                                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="5-things-i-learned-from-teaching.html" id="currpage">Learning</a>
                             </li>
             
                             
@@ -59,11 +67,10 @@
                         </div>
                       </div>
                     </nav>
+                  </header>
     
-    <div role = "main">                         
-    <div class="container">    
-    <!-- <h1 class="text-uppercase mb-0">5 THINGS ABOUT LAUREN</h1> -->
-    </div>
+    <div role = "main" id="main" tabindex="-1">                         
+
 
     <section class="tips" id="tips">
         <div class="container">
@@ -76,8 +83,6 @@
 
             <div class="grid-container resize">
                    
-
-
                     <div class="grid-item padding extra"><h2>1. Everyone has something to contribute.</h2>
                       <p>Some people are creative, some are sensible, some can bring people together, some provide another student the opportunity to take care of them.</p></div>
 
@@ -89,11 +94,8 @@
 
                     <div class="grid-item"><video class= "fit" controls>
                         <source src="video/second-graders-mirror-dancing.mp4" type="video/mp4">
-                        <!-- <source src="movie.ogg" type="video/ogg"> -->
                       Your browser does not support the video tag.
                       </video></div>
-
-                     
 
                       <div class="grid-item padding"><h2>3. Two heads are better than one, and 7 heads are not necessarily better than 6.</h2>
                         <p>A good rule of thumb for maximum group size in elementary school students is:</p><p id= "center">group size ≤ a child’s grade level + 1</p></div>
@@ -101,16 +103,13 @@
 
                       <div class="grid-item fit"><img class="img-fluid mb-5 d-block mx-auto" src="img/hydra.jpg" alt="An image of a hydra" ></div>
 
-
-                      
-                
                       <div class="grid-item"><p>Here are 4th grade students working in groups of four:</p></div>
 
                       <div class="grid-item fit"><img class="img-fluid mb-5 d-block mx-auto" src="img/group-project-boys.jpg" alt="An image of boys working on a group project" ></div>
 
-                      <div class="grid-item"><p>Here are 3rd grade students working in groups of four:</p></div>
+                      <!-- <div class="grid-item"><p>Here are 3rd grade students working in groups of four:</p></div>
 
-                      <div class="grid-item fit"><img class="img-fluid mb-5 d-block mx-auto" src="img/group-project-girls.jpg" alt="An image of girls working on a group project"></div>
+                      <div class="grid-item fit"><img class="img-fluid mb-5 d-block mx-auto" src="img/group-project-girls.jpg" alt="An image of girls working on a group project"></div> -->
             
                       <div class="grid-item padding"><h2>4. Environment matters.</h2>
                       <p>I learned that it's far more pleasant for me to work in a place where children have enough food to eat, a place to live, working plumbing at home and parents who have time to help them with their school work, than the opposite.</p></div>
@@ -118,11 +117,7 @@
                       <div class="grid-item fit"> 
                           <img  class="img-fluid mb-5 d-block mx-auto microphone fit-half" src="img/poor-school-yard.jpg" alt="An image of school playground in a poor neighborhood" >
                           <img class="img-fluid mb-5 d-block mx-auto microphone side-pat fit-half" src="img/playground-with-globe.jpg" alt="An image of a playground in a wealthy neighborhood">
-                      </div>
-
-
-
-                      
+                     </div>
 
                       <div class="grid-item padding">
                         <h2>5. The experience of managing a class of 4th graders is surprisingly similar to managing a class of graduate students.</h2>
@@ -132,32 +127,64 @@
                         <p>That's alright! Here's my 4th grade students working on their group rhythm projects.</p></div>
 
                       <div class="grid-item">
-                        
-                        <!-- <video width="400" controls> -->
-                        <!-- <source src="video/second-graders-show.mp4" type="video/mp4"> -->
-                        <!-- <source src="movie.ogg" type="video/ogg"> -->
-                      <!-- Your browser does not support the video tag. -->
-                      <!-- </video> -->
-
-                        
-                        <iframe class= "fit" height="315" src="https://www.youtube.com/embed/WWR031Z-Irc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe title = "Rhythm Projects" class= "fit" height="315" src="https://www.youtube.com/embed/WWR031Z-Irc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                       </div>
-                      <!-- Why isn't this video link working? -->
-                      
-                    
-                    </div>
-                      
+                   
+              </div>
+                
+                <h1>Music and Movement Projects</h1>
+                <div class = "gallery lightbox-container">
+                  <!-- 1 -->
+                  <a class="example-image-link mix green" href="dist/images/kids-with-hands-in-the-air.JPG" data-lightbox="example-set" data-title="Kids with their hands in the air."><img class="example-image" src="dist/images/kids-with-hands-in-the-air.JPG" alt="Kids with their hands in the air."/></a>
+                  
+                  <!-- 2 -->
+                  <a class="example-image-link mix green" href="dist/images/kids-sitting-on-a-rug-making-up-movements.JPG" data-lightbox="example-set" data-title="Kids sitting on a rug making up movements."><img class="example-image" src="dist/images/kids-sitting-on-a-rug-making-up-movements.JPG" alt="Kids sitting on a rug making up movements" /></a>
             
-         
-
-
-
+                  <!-- 3 -->
+                  <a class="example-image-link mix blue" href="dist/images/kids-with-their-hands-over-their-hearts.JPG" data-lightbox="example-set" data-title="Kids with their hands over their hearts." data-alt= "Kids with their hands over their hearts." ><img class="example-image" src="dist/images/kids-with-their-hands-over-their-hearts.JPG" alt="Kids with their hands over their hearts." /></a>
+                  
+                  <!-- 4 -->
+                  <a class="example-image-link mix blue" href="dist/images/kids-reaching-with-left-hand.JPG" data-lightbox="example-set" data-title="Kids reaching with their left hand."><img class="example-image" src="dist/images/kids-reaching-with-left-hand.JPG" alt="Kids reaching with their left hand." /></a>
+            
+                  <!-- 5 -->
+                  <a class="example-image-link mix pink" href="dist/images/two-groups-working-on-movement.JPG" data-lightbox="example-set" data-title="Two groups of students working on movement projects."><img class="example-image" src="dist/images/two-groups-working-on-movement.JPG" alt="Two groups of students working on movement projects." /></a>
+            
+                  <!-- 6 -->
+                  <a class="example-image-link mix pink" href="dist/images/one-group-in-discussion.JPG" data-lightbox="example-set" data-title="One student group discussing their project.."><img class="example-image" src="dist/images/one-group-in-discussion.JPG" alt="One student group discussing their project." /></a>
+            
+                  <!-- 7 -->
+                  <a class="example-image-link mix green" href="dist/images/selfie-with-second-graders.JPG" data-lightbox="example-set" data-title="Selfie with second graders."><img class="example-image" src="dist/images/selfie-with-second-graders.JPG" alt="Selfie with second graders." /></a>
+            
+                  <!-- 8 -->
+                  <a class="example-image-link mix green" href="dist/images/second-graders-sitting-nicely.JPG" data-lightbox="example-set" data-title="Second graders sitting, nicely (mostly)."><img class="example-image" src="dist/images/second-graders-sitting-nicely.JPG" alt="Second graders sitting, mostly, nicely."/></a>
+            
+                  <!-- 9 -->
+                  <a class="example-image-link mix green" href="dist/images/fourth-graders-getting-ready.JPG" data-lightbox="example-set" data-title="Fourth graders' show rehearsal."><img class="example-image" src="dist/images/fourth-graders-getting-ready.JPG" alt="Fourth graders' show rehearsal." /></a>
+                  
+                  
+                  
+                      </div>
+                    </section>
+                  
         </div>
 
         
     </section>
     </div>
 
+    <!-- JS for Lightbox -->
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="dist/js/mixitup.min.js"></script>
+    <script>
+      var containerEl = document.querySelector('.lightbox-container');
+    </script>
+
+    <footer class = "container">
+      <p class= "no-pad">Lauren Elbaum's Page</p>
+      <p class= "no-pad">Contact: <a href="mailto:laurenelbaum@gmail.com" alt= "Lauren's email address" >laurenelbaum@gmail.com</a></p>
+    </footer>
+
+    
 
      <!-- Bootstrap core JavaScript -->
      <script src="vendor/jquery/jquery.min.js"></script>
@@ -173,5 +200,7 @@
  
      <!-- Custom scripts for this template -->
      <script src="js/freelancer.min.js"></script>
+
+     
 </body>
 </html>
